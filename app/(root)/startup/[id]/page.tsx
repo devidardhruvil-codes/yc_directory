@@ -39,14 +39,14 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
         <p className="sub-heading !max-w-5xl">{post.description}</p>
       </section>
 
-      <section className="section_container content-center">
-        <img
-          src={post.image}
-          alt="thumbnail"
-          // width={600}
-          // height={550}
-          className="w-full h-auto rounded-xl"
-        />
+      <section className="section_container">
+        <div className="flex justify-center">
+          <img
+            src={post.image}
+            alt="thumbnail"
+            className="w-5xl h-auto rounded-xl "
+          />
+        </div>
 
         <div className="space-y-5 mt-10 max-w-4xl mx-auto">
           <div className="flex-between gap-5">
